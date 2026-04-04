@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AgriSmart - Your intelligent agriculture companion. Get crop recommendations, weather insights, government schemes, market prices, and expert farming guidance.">
+    <meta name="keywords" content="agriculture, farming, crop recommendation, weather, government schemes, market prices, smart farming">
+    <title> Intelligent Farming Assistant for Personalized Crop Planning using AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="loader-plant">
+            <div class="plant-stem"></div>
+            <div class="plant-leaf left"></div>
+            <div class="plant-leaf right"></div>
+        </div>
+        <p class="loader-text">Growing your experience...</p>
+    </div>
+
+    <!-- Living Aurora Background -->
+    <div class="aurora-bg">
+        <div class="aurora-orb"></div>
+        <div class="aurora-orb"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <i class="fas fa-seedling"></i>
+                <span>Agri<span class="highlight">Smart</span></span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#weather" class="nav-link">Weather</a></li>
+                <li><a href="#crops" class="nav-link">Crops</a></li>
+                <li><a href="#schemes" class="nav-link">Schemes</a></li>
+                <li><a href="#market" class="nav-link">Market</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn btn-primary nav-cta" id="get-started-btn">Get Started</button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge animate-on-scroll">
+                <i class="fas fa-rocket"></i>
+                <span>AI-Powered Smart Agriculture</span>
+            </div>
+            <h1 class="hero-title animate-on-scroll">
+                Revolutionize Your
+                <span class="gradient-text">Farming</span>
+                <br>With Intelligence
+            </h1>
+            <p class="hero-subtitle animate-on-scroll">
+                Empowering farmers with AI-driven crop recommendations, real-time weather insights,
+                government schemes, and live market prices — all in one platform.
+            </p>
+            <div class="hero-buttons animate-on-scroll">
+                <a href="#features" class="btn btn-primary btn-lg">
+                    <i class="fas fa-compass"></i>
+                    Explore Features
+                </a>
+                <a href="#crops" class="btn btn-outline btn-lg">
+                    <i class="fas fa-play-circle"></i>
+                    Get Recommendations
+                </a>
+            </div>
+            <div class="hero-stats animate-on-scroll">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="50">0</div>
+                    <div class="stat-suffix">+</div>
+                    <div class="stat-label">Crop Types</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="100">0</div>
+                    <div class="stat-suffix">+</div>
+                    <div class="stat-label">Govt Schemes</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="500">0</div>
+                    <div class="stat-suffix">+</div>
+                    <div class="stat-label">Market Prices</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="10000">0</div>
+                    <div class="stat-suffix">+</div>
+                    <div class="stat-label">Farmers Helped</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll Down</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section features-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-badge">
+                    <i class="fas fa-star"></i> Our Features
+                </span>
+                <h2 class="section-title">Everything You Need to <span class="gradient-text">Farm Smarter</span></h2>
+                <p class="section-subtitle">Comprehensive tools and insights designed specifically for modern agriculture</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card animate-on-scroll" data-delay="0" style="--card-accent: #22c55e;">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <h3>Weather Intelligence</h3>
+                    <p>Real-time weather data with 7-day forecasts, alerts, and crop-specific weather advisories for your region.</p>
+                    <a href="#weather" class="feature-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="feature-card animate-on-scroll" data-delay="100" style="--card-accent: #0ea5e9;">
+                    <div class="feature-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Crop Recommendations</h3>
+                    <p>AI-powered crop suggestions based on soil type, weather patterns, season, and regional suitability.</p>
+                    <a href="#crops" class="feature-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="feature-card animate-on-scroll" data-delay="200" style="--card-accent: #eab308;">
+                    <div class="feature-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Government Schemes</h3>
+                    <p>Stay updated with the latest agricultural subsidies, insurance schemes, and financial aid programs.</p>
+                    <a href="#schemes" class="feature-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="feature-card animate-on-scroll" data-delay="300" style="--card-accent: #f43f5e;">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Market Prices</h3>
+                    <p>Live mandi prices, price trends, and demand analysis to help you sell at the best time.</p>
+                    <a href="#market" class="feature-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="feature-card animate-on-scroll" data-delay="400" style="--card-accent: #8b5cf6;">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI Chatbot</h3>
+                    <p>24/7 intelligent farming assistant to answer your questions about crops, pests, fertilizers, and more.</p>
+                    <a href="#" class="feature-link" onclick="toggleChatbot()">
+                        Try Now <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="feature-card animate-on-scroll" data-delay="500" style="--card-accent: #06b6d4;">
+                    <div class="feature-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3>Pest Detection</h3>
+                    <p>Upload crop photos to identify diseases and pests with AI-powered image recognition technology.</p>
+                    <a href="#" class="feature-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="feature-card animate-on-scroll" data-delay="600" style="--card-accent: #ec4899;">
+                    <div class="feature-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Soil Analysis</h3>
+                    <p>Enter soil parameters to get health scores, nutrient recommendations, and improvement strategies.</p>
+                    <a href="#" class="feature-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="feature-card animate-on-scroll" data-delay="700" style="--card-accent: #14b8a6;">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Crop Calendar</h3>
+                    <p>Seasonal planner with sowing, irrigation, fertilization, and harvesting schedules customized for you.</p>
+                    <a href="#" class="feature-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weather Section -->
+    <section id="weather" class="section weather-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-badge">
+                    <i class="fas fa-cloud-sun"></i> Weather Intelligence
+                </span>
+                <h2 class="section-title">Stay Ahead With <span class="gradient-text">Weather Insights</span></h2>
+                <p class="section-subtitle">Real-time weather monitoring to make informed farming decisions</p>
+            </div>
+            <div class="weather-dashboard animate-on-scroll">
+                <div class="weather-main">
+                    <div class="weather-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span id="weather-city">New Delhi, India</span>
+                        <button class="btn-icon" id="weather-refresh" title="Refresh Weather">
+                            <i class="fas fa-sync-alt"></i>
+                        </button>
+                    </div>
+                    <div class="weather-current">
+                        <div class="weather-temp-group">
+                            <div class="weather-icon-large">
+                                <i class="fas fa-sun" id="weather-icon-main"></i>
+                            </div>
+                            <div class="weather-temp">
+                                <span class="temp-value" id="current-temp">32</span>
+                                <span class="temp-unit">°C</span>
+                            </div>
+                        </div>
+                        <div class="weather-details">
+                            <div class="weather-condition" id="weather-condition">Partly Cloudy</div>
+                            <div class="weather-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-tint"></i>
+                                    <span>Humidity: <strong id="humidity-val">65%</strong></span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-wind"></i>
+                                    <span>Wind: <strong id="wind-val">12 km/h</strong></span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-eye"></i>
+                                    <span>Visibility: <strong>10 km</strong></span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                    <span>Pressure: <strong>1013 hPa</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="weather-forecast">
+                    <h3 class="forecast-title">7-Day Forecast</h3>
+                    <div class="forecast-cards">
+                        <div class="forecast-card">
+                            <span class="forecast-day">Mon</span>
+                            <i class="fas fa-sun forecast-icon" style="color: #f59e0b;"></i>
+                            <span class="forecast-temp">34° / 22°</span>
+                        </div>
+                        <div class="forecast-card">
+                            <span class="forecast-day">Tue</span>
+                            <i class="fas fa-cloud-sun forecast-icon" style="color: #6b7280;"></i>
+                            <span class="forecast-temp">31° / 21°</span>
+                        </div>
+                        <div class="forecast-card">
+                            <span class="forecast-day">Wed</span>
+                            <i class="fas fa-cloud-rain forecast-icon" style="color: #3b82f6;"></i>
+                            <span class="forecast-temp">28° / 19°</span>
+                        </div>
+                        <div class="forecast-card">
+                            <span class="forecast-day">Thu</span>
+                            <i class="fas fa-cloud-showers-heavy forecast-icon" style="color: #1d4ed8;"></i>
+                            <span class="forecast-temp">26° / 18°</span>
+                        </div>
+                        <div class="forecast-card">
+                            <span class="forecast-day">Fri</span>
+                            <i class="fas fa-cloud forecast-icon" style="color: #9ca3af;"></i>
+                            <span class="forecast-temp">29° / 20°</span>
+                        </div>
+                        <div class="forecast-card">
+                            <span class="forecast-day">Sat</span>
+                            <i class="fas fa-sun forecast-icon" style="color: #f59e0b;"></i>
+                            <span class="forecast-temp">33° / 22°</span>
+                        </div>
+                        <div class="forecast-card">
+                            <span class="forecast-day">Sun</span>
+                            <i class="fas fa-sun forecast-icon" style="color: #f59e0b;"></i>
+                            <span class="forecast-temp">35° / 23°</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="weather-advisory">
+                    <div class="advisory-header">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h4>Crop Advisory</h4>
+                    </div>
+                    <p>Rain expected on Wednesday-Thursday. Consider delaying irrigation. Good time for sowing Rabi crops. Apply mulching to conserve soil moisture.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Crop Recommendation Section -->
+    <section id="crops" class="section crops-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-badge">
+                    <i class="fas fa-seedling"></i> Crop Intelligence
+                </span>
+                <h2 class="section-title">Smart <span class="gradient-text">Crop Recommendations</span></h2>
+                <p class="section-subtitle">AI-powered suggestions based on your soil, weather, and regional conditions</p>
+            </div>
+            <div class="crop-recommender animate-on-scroll">
+                <div class="recommender-form">
+                    <h3><i class="fas fa-sliders-h"></i> Enter Your Details</h3>
+                    <form id="crop-form">
+                        <div class="form-group">
+                            <label for="soil-type">
+                                <i class="fas fa-mountain"></i> Soil Type
+                            </label>
+                            <select id="soil-type" class="form-control">
+                                <option value="">Select Soil Type</option>
+                                <option value="alluvial">Alluvial Soil</option>
+                                <option value="black">Black Soil</option>
+                                <option value="red">Red Soil</option>
+                                <option value="laterite">Laterite Soil</option>
+                                <option value="sandy">Sandy Soil</option>
+                                <option value="clay">Clay Soil</option>
+                                <option value="loamy">Loamy Soil</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="season">
+                                <i class="fas fa-calendar"></i> Season
+                            </label>
+                            <select id="season" class="form-control">
+                                <option value="">Select Season</option>
+                                <option value="kharif">Kharif (Monsoon)</option>
+                                <option value="rabi">Rabi (Winter)</option>
+                                <option value="zaid">Zaid (Summer)</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="rainfall">
+                                    <i class="fas fa-cloud-rain"></i> Avg Rainfall (mm)
+                                </label>
+                                <input type="number" id="rainfall" class="form-control" placeholder="e.g., 800">
+                            </div>
+                            <div class="form-group">
+                                <label for="temperature">
+                                    <i class="fas fa-thermometer-half"></i> Avg Temp (°C)
+                                </label>
+                                <input type="number" id="temperature" class="form-control" placeholder="e.g., 28">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="state">
+                                <i class="fas fa-map"></i> State
+                            </label>
+                            <select id="state" class="form-control">
+                                <option value="">Select State</option>
+                                <option value="punjab">Punjab</option>
+                                <option value="haryana">Haryana</option>
+                                <option value="up">Uttar Pradesh</option>
+                                <option value="mp">Madhya Pradesh</option>
+                                <option value="maharashtra">Maharashtra</option>
+                                <option value="karnataka">Karnataka</option>
+                                <option value="ap">Andhra Pradesh</option>
+                                <option value="tn">Tamil Nadu</option>
+                                <option value="wb">West Bengal</option>
+                                <option value="rajasthan">Rajasthan</option>
+                                <option value="gujarat">Gujarat</option>
+                                <option value="bihar">Bihar</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" id="recommend-btn">
+                            <i class="fas fa-magic"></i> Get Recommendations
+                        </button>
+                    </form>
+                </div>
+                <div class="recommender-results" id="crop-results">
+                    <div class="results-placeholder">
+                        <div class="placeholder-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Your Crop Recommendations</h3>
+                        <p>Fill in your details and click "Get Recommendations" to see AI-powered crop suggestions tailored for you.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Crop Growing Guide -->
+            <div class="crop-guides animate-on-scroll">
+                <h3 class="guides-title">
+                    <i class="fas fa-book-open"></i> Popular Crop Growing Guides
+                </h3>
+                <div class="guides-carousel" id="guides-carousel">
+                    <div class="guide-card">
+                        <div class="guide-image" style="background: linear-gradient(135deg, #f6d365, #fda085);">
+                            <i class="fas fa-wheat-awn"></i>
+                        </div>
+                        <div class="guide-content">
+                            <h4>Wheat</h4>
+                            <div class="guide-tags">
+                                <span class="tag">Rabi</span>
+                                <span class="tag">20-25°C</span>
+                            </div>
+                            <p>Best grown in well-drained loamy soil with moderate temperature.</p>
+                            <button class="btn btn-sm btn-outline" onclick="showGuide('wheat')">View Guide</button>
+                        </div>
+                    </div>
+                    <div class="guide-card">
+                        <div class="guide-image" style="background: linear-gradient(135deg, #a8e063, #56ab2f);">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="guide-content">
+                            <h4>Rice</h4>
+                            <div class="guide-tags">
+                                <span class="tag">Kharif</span>
+                                <span class="tag">25-35°C</span>
+                            </div>
+                            <p>Requires abundant water. Best suited for alluvial and clay soils.</p>
+                            <button class="btn btn-sm btn-outline" onclick="showGuide('rice')">View Guide</button>
+                        </div>
+                    </div>
+                    <div class="guide-card">
+                        <div class="guide-image" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+                            <i class="fas fa-pepper-hot"></i>
+                        </div>
+                        <div class="guide-content">
+                            <h4>Cotton</h4>
+                            <div class="guide-tags">
+                                <span class="tag">Kharif</span>
+                                <span class="tag">25-35°C</span>
+                            </div>
+                            <p>Thrives in black soil with warm climate and moderate rainfall.</p>
+                            <button class="btn btn-sm btn-outline" onclick="showGuide('cotton')">View Guide</button>
+                        </div>
+                    </div>
+                    <div class="guide-card">
+                        <div class="guide-image" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+                            <i class="fas fa-carrot"></i>
+                        </div>
+                        <div class="guide-content">
+                            <h4>Sugarcane</h4>
+                            <div class="guide-tags">
+                                <span class="tag">Annual</span>
+                                <span class="tag">20-30°C</span>
+                            </div>
+                            <p>Needs hot and humid climate with plenty of water supply.</p>
+                            <button class="btn btn-sm btn-outline" onclick="showGuide('sugarcane')">View Guide</button>
+                        </div>
+                    </div>
+                    <div class="guide-card">
+                        <div class="guide-image" style="background: linear-gradient(135deg, #fa709a, #fee140);">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <div class="guide-content">
+                            <h4>Mustard</h4>
+                            <div class="guide-tags">
+                                <span class="tag">Rabi</span>
+                                <span class="tag">15-25°C</span>
+                            </div>
+                            <p>Grows well in dry conditions with cool temperatures and sandy loam soil.</p>
+                            <button class="btn btn-sm btn-outline" onclick="showGuide('mustard')">View Guide</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Government Schemes Section -->
+    <section id="schemes" class="section schemes-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-badge">
+                    <i class="fas fa-landmark"></i> Government Support
+                </span>
+                <h2 class="section-title">Agricultural <span class="gradient-text">Government Schemes</span></h2>
+                <p class="section-subtitle">Explore financial support, subsidies, and programs designed to empower farmers</p>
+            </div>
+            <div class="schemes-filter animate-on-scroll">
+                <button class="filter-btn active" data-filter="all">All Schemes</button>
+                <button class="filter-btn" data-filter="financial">Financial Aid</button>
+                <button class="filter-btn" data-filter="insurance">Insurance</button>
+                <button class="filter-btn" data-filter="subsidy">Subsidies</button>
+                <button class="filter-btn" data-filter="technology">Technology</button>
+            </div>
+            <div class="schemes-grid" id="schemes-grid">
+                <div class="scheme-card animate-on-scroll" data-category="financial">
+                    <div class="scheme-ribbon">Popular</div>
+                    <div class="scheme-header" style="--scheme-color: #10b981;">
+                        <div class="scheme-icon">
+                            <i class="fas fa-hand-holding-usd"></i>
+                        </div>
+                        <h3>PM-KISAN</h3>
+                    </div>
+                    <div class="scheme-body">
+                        <p>Direct income support of ₹6,000 per year to small and marginal farmer families.</p>
+                        <div class="scheme-details">
+                            <div class="detail"><i class="fas fa-rupee-sign"></i> ₹6,000/year</div>
+                            <div class="detail"><i class="fas fa-users"></i> Small Farmers</div>
+                        </div>
+                        <div class="scheme-status">
+                            <span class="status-badge active">Active</span>
+                            <span class="scheme-date">Since Feb 2019</span>
+                        </div>
+                    </div>
+                    <div class="scheme-footer">
+                        <a href="#" class="btn btn-sm btn-primary">Apply Now</a>
+                        <a href="#" class="btn btn-sm btn-ghost">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="scheme-card animate-on-scroll" data-category="insurance">
+                    <div class="scheme-header" style="--scheme-color: #3b82f6;">
+                        <div class="scheme-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>PM Fasal Bima Yojana</h3>
+                    </div>
+                    <div class="scheme-body">
+                        <p>Comprehensive crop insurance scheme covering yield losses due to natural calamities.</p>
+                        <div class="scheme-details">
+                            <div class="detail"><i class="fas fa-percentage"></i> Low Premium</div>
+                            <div class="detail"><i class="fas fa-leaf"></i> All Crops</div>
+                        </div>
+                        <div class="scheme-status">
+                            <span class="status-badge active">Active</span>
+                            <span class="scheme-date">Since Jan 2016</span>
+                        </div>
+                    </div>
+                    <div class="scheme-footer">
+                        <a href="#" class="btn btn-sm btn-primary">Apply Now</a>
+                        <a href="#" class="btn btn-sm btn-ghost">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="scheme-card animate-on-scroll" data-category="financial">
+                    <div class="scheme-header" style="--scheme-color: #f59e0b;">
+                        <div class="scheme-icon">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <h3>Kisan Credit Card</h3>
+                    </div>
+                    <div class="scheme-body">
+                        <p>Easy credit access for farmers to meet agricultural and farming expenses at low interest.</p>
+                        <div class="scheme-details">
+                            <div class="detail"><i class="fas fa-percentage"></i> 4% Interest</div>
+                            <div class="detail"><i class="fas fa-clock"></i> Quick Approval</div>
+                        </div>
+                        <div class="scheme-status">
+                            <span class="status-badge active">Active</span>
+                            <span class="scheme-date">Since 1998</span>
+                        </div>
+                    </div>
+                    <div class="scheme-footer">
+                        <a href="#" class="btn btn-sm btn-primary">Apply Now</a>
+                        <a href="#" class="btn btn-sm btn-ghost">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="scheme-card animate-on-scroll" data-category="subsidy">
+                    <div class="scheme-header" style="--scheme-color: #8b5cf6;">
+                        <div class="scheme-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <h3>PM Krishi Sinchai Yojana</h3>
+                    </div>
+                    <div class="scheme-body">
+                        <p>Provides subsidized micro-irrigation systems and water management solutions to farmers.</p>
+                        <div class="scheme-details">
+                            <div class="detail"><i class="fas fa-percentage"></i> 55-90% Subsidy</div>
+                            <div class="detail"><i class="fas fa-tint"></i> Drip/Sprinkler</div>
+                        </div>
+                        <div class="scheme-status">
+                            <span class="status-badge active">Active</span>
+                            <span class="scheme-date">Since 2015</span>
+                        </div>
+                    </div>
+                    <div class="scheme-footer">
+                        <a href="#" class="btn btn-sm btn-primary">Apply Now</a>
+                        <a href="#" class="btn btn-sm btn-ghost">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="scheme-card animate-on-scroll" data-category="technology">
+                    <div class="scheme-header" style="--scheme-color: #06b6d4;">
+                        <div class="scheme-icon">
+                            <i class="fas fa-satellite-dish"></i>
+                        </div>
+                        <h3>e-NAM</h3>
+                    </div>
+                    <div class="scheme-body">
+                        <p>Online trading platform for agricultural commodities connecting farmers to markets nationwide.</p>
+                        <div class="scheme-details">
+                            <div class="detail"><i class="fas fa-globe"></i> Pan India</div>
+                            <div class="detail"><i class="fas fa-handshake"></i> Direct Trade</div>
+                        </div>
+                        <div class="scheme-status">
+                            <span class="status-badge active">Active</span>
+                            <span class="scheme-date">Since 2016</span>
+                        </div>
+                    </div>
+                    <div class="scheme-footer">
+                        <a href="#" class="btn btn-sm btn-primary">Visit Portal</a>
+                        <a href="#" class="btn btn-sm btn-ghost">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="scheme-card animate-on-scroll" data-category="subsidy">
+                    <div class="scheme-header" style="--scheme-color: #ec4899;">
+                        <div class="scheme-icon">
+                            <i class="fas fa-solar-panel"></i>
+                        </div>
+                        <h3>PM-KUSUM</h3>
+                    </div>
+                    <div class="scheme-body">
+                        <p>Subsidized solar pumps and grid-connected solar power plants for farmers to reduce energy costs.</p>
+                        <div class="scheme-details">
+                            <div class="detail"><i class="fas fa-sun"></i> Solar Energy</div>
+                            <div class="detail"><i class="fas fa-percentage"></i> 60% Subsidy</div>
+                        </div>
+                        <div class="scheme-status">
+                            <span class="status-badge active">Active</span>
+                            <span class="scheme-date">Since 2019</span>
+                        </div>
+                    </div>
+                    <div class="scheme-footer">
+                        <a href="#" class="btn btn-sm btn-primary">Apply Now</a>
+                        <a href="#" class="btn btn-sm btn-ghost">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Prices Section -->
+    <section id="market" class="section market-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-badge">
+                    <i class="fas fa-chart-line"></i> Market Intelligence
+                </span>
+                <h2 class="section-title">Live <span class="gradient-text">Market Prices</span> & Demand</h2>
+                <p class="section-subtitle">Track real-time mandi prices and demand trends to maximize your profits</p>
+            </div>
+            <div class="market-dashboard animate-on-scroll">
+                <div class="market-controls">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="market-search" placeholder="Search crop or market..." class="form-control">
+                    </div>
+                    <div class="market-filters">
+                        <select class="form-control" id="market-state-filter">
+                            <option value="all">All States</option>
+                            <option value="punjab">Punjab</option>
+                            <option value="haryana">Haryana</option>
+                            <option value="up">Uttar Pradesh</option>
+                            <option value="mp">Madhya Pradesh</option>
+                            <option value="maharashtra">Maharashtra</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="market-table-wrapper">
+                    <table class="market-table" id="market-table">
+                        <thead>
+                            <tr>
+                                <th>Crop</th>
+                                <th>Market</th>
+                                <th>Min Price (₹/Q)</th>
+                                <th>Max Price (₹/Q)</th>
+                                <th>Modal Price (₹/Q)</th>
+                                <th>Trend</th>
+                                <th>Demand</th>
+                            </tr>
+                        </thead>
+                        <tbody id="market-tbody">
+                            <!-- Populated by JS -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="market-chart-container">
+                    <h3 class="chart-title"><i class="fas fa-chart-area"></i> Price Trend - Last 30 Days</h3>
+                    <div class="chart-wrapper">
+                        <canvas id="price-chart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Newsletter Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info animate-on-scroll">
+                    <span class="section-badge">
+                        <i class="fas fa-envelope"></i> Get In Touch
+                    </span>
+                    <h2 class="section-title">Ready to Transform Your <span class="gradient-text">Farming?</span></h2>
+                    <p>Join thousands of farmers already using AgriSmart. Subscribe to get the latest updates, crop advisories, and market insights directly to your inbox.</p>
+                    <div class="contact-features">
+                        <div class="contact-feature">
+                            <div class="cf-icon"><i class="fas fa-check-circle"></i></div>
+                            <div>
+                                <h4>Weekly Crop Advisories</h4>
+                                <p>Personalized farming tips delivered every week</p>
+                            </div>
+                        </div>
+                        <div class="contact-feature">
+                            <div class="cf-icon"><i class="fas fa-check-circle"></i></div>
+                            <div>
+                                <h4>Price Alerts</h4>
+                                <p>Get notified when crop prices hit your target</p>
+                            </div>
+                        </div>
+                        <div class="contact-feature">
+                            <div class="cf-icon"><i class="fas fa-check-circle"></i></div>
+                            <div>
+                                <h4>Scheme Updates</h4>
+                                <p>Never miss a new government scheme or deadline</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper animate-on-scroll">
+                    <form class="contact-form" id="contact-form">
+                        <h3>Subscribe & Connect</h3>
+                        <div class="form-group">
+                            <label for="contact-name"><i class="fas fa-user"></i> Full Name</label>
+                            <input type="text" id="contact-name" class="form-control" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email"><i class="fas fa-envelope"></i> Email</label>
+                            <input type="email" id="contact-email" class="form-control" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-phone"><i class="fas fa-phone"></i> Phone</label>
+                            <input type="tel" id="contact-phone" class="form-control" placeholder="Enter your phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message"><i class="fas fa-comment"></i> Message (Optional)</label>
+                            <textarea id="contact-message" class="form-control" rows="3" placeholder="Tell us about your farming needs..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i> Subscribe Now
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <i class="fas fa-seedling"></i>
+                        Agri<span>Smart</span>
+                    </a>
+                    <p>Empowering farmers with technology for a sustainable and profitable future in agriculture.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#weather">Weather</a></li>
+                        <li><a href="#crops">Crop Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#schemes">Govt Schemes</a></li>
+                        <li><a href="#market">Market Prices</a></li>
+                        <li><a href="#">Farming Tips</a></li>
+                        <li><a href="#">API Access</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> support@agrismart.in</li>
+                        <li><i class="fas fa-phone"></i> +91 1800-XXX-XXXX</li>
+                        <li><i class="fas fa-map-marker-alt"></i> New Delhi, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AgriSmart. All rights reserved. Made with <i class="fas fa-heart" style="color: #ef4444;"></i> for Indian Farmers</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <div class="chatbot-trigger" id="chatbot-trigger" onclick="toggleChatbot()">
+        <i class="fas fa-comments"></i>
+        <span class="chatbot-badge">1</span>
+    </div>
+    <div class="chatbot-window" id="chatbot-window">
+        <div class="chatbot-header">
+            <div class="chatbot-avatar">
+                <i class="fas fa-robot"></i>
+            </div>
+            <div class="chatbot-info">
+                <h4>AgriBot</h4>
+                <span class="chatbot-status">
+                    <span class="status-dot"></span> Online
+                </span>
+            </div>
+            <button class="chatbot-close" onclick="toggleChatbot()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="chat-message bot">
+                <div class="message-avatar"><i class="fas fa-robot"></i></div>
+                <div class="message-content">
+                    <p>Hello! 👋 I'm AgriBot, your farming assistant. I can help you with:</p>
+                    <div class="quick-replies">
+                        <button class="quick-reply" onclick="sendQuickReply('Crop recommendations')">🌾 Crop Tips</button>
+                        <button class="quick-reply" onclick="sendQuickReply('Pest control methods')">🐛 Pest Control</button>
+                        <button class="quick-reply" onclick="sendQuickReply('Weather advisory')">🌦️ Weather</button>
+                        <button class="quick-reply" onclick="sendQuickReply('Government schemes')">🏛️ Schemes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="chatbot-input-field" placeholder="Ask me anything about farming..." onkeypress="handleChatKeypress(event)">
+            <button class="chatbot-send" onclick="sendMessage()">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Crop Guide Modal -->
+    <div class="modal-overlay" id="guide-modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeGuideModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div id="guide-modal-body">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>

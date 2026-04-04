@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "weather": "Weather",
+    "crops": "Crops",
+    "disease": "Disease",
+    "market": "Market",
+    "schemes": "Schemes",
+    "news": "News",
+    "login": "Login",
+    "getStarted": "Get Started"
+  },
+  "landing": {
+    "badge": "AI-Powered Smart Agriculture",
+    "title1": "Revolutionize Your",
+    "titleGradient": "Farming",
+    "title2": "With Intelligence",
+    "subtitle": "Empowering farmers with AI-driven crop recommendations, real-time weather insights, government schemes, and live market prices — all in one platform.",
+    "btnStarted": "Get Started Free",
+    "btnExplore": "Explore Features",
+    "featuresTitle": "Our Features",
+    "featuresHeading1": "Everything You Need to",
+    "featuresHeadingGradient": "Farm Smarter",
+    "featuresDesc": "Comprehensive tools and insights designed specifically for modern agriculture",
+    "howItWorks": "How It Works",
+    "stepsHeading1": "Simple Steps to",
+    "stepsHeading2": "Better Farming",
+    "step1Title": "Enter Your Details",
+    "step1Desc": "Tell us about your soil, location, and season preferences",
+    "step2Title": "AI Analysis",
+    "step2Desc": "Our ML models analyze weather, soil, and market data",
+    "step3Title": "Get Recommendations",
+    "step3Desc": "Receive personalized crop, price, and scheme suggestions",
+    "step4Title": "Grow & Profit",
+    "step4Desc": "Follow the calendar, track prices, and maximize returns",
+    "ctaHeading1": "Ready to Transform Your",
+    "ctaHeading2": "Farming?",
+    "ctaDesc": "Join thousands of farmers already using AgriSmart to grow better and earn more.",
+    "ctaBtn1": "Start For Free",
+    "ctaBtn2": "View Demo Dashboard"
+  }
+}
