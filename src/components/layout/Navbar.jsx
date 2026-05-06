@@ -2,7 +2,7 @@ import { useState, useEffect, useContext } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { FaSeedling, FaBars, FaTimes, FaSun, FaMoon } from 'react-icons/fa';
-import { ThemeContext, LangContext } from '../App';
+import { ThemeContext, LangContext } from '../../App';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
