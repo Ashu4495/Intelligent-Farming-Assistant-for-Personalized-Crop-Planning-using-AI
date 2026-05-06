@@ -35,7 +35,7 @@ Welcome to the Intelligent Farming Assistant project! This application provides 
 
 | Dashboard | Crop Recommendation |
 |:---:|:---:|
-| ![Dashboard](./src/assets/Dashboard.png) | ![Crop Recommendation](./src/assets/Crops.png) |
+| ![Dashboard](./src/assets/dashboard.png) | ![Crop Recommendation](./src/assets/Crops.png) |
 
 | Disease Detection | Weather Insights |
 |:---:|:---:|
