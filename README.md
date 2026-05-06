@@ -33,11 +33,18 @@ Welcome to the Intelligent Farming Assistant project! This application provides 
 
 ## 📸 Screenshots
 
-### Landing Page
+### 🏠 Landing Page
 ![Landing Page](src/assets/landing_page.png)
 
-### Dashboard
-![Dashboard](src/assets/dashboard_snapshot.png)
+---
+
+### 📊 Dashboard
+![Dashboard](src/assets/dashboard.png)
+
+---
+
+### 🌾 Crop Recommendation
+![Crop Recommendation](src/assets/crop_recommendation.png)
 
 ## 📂 Project Structure
 
