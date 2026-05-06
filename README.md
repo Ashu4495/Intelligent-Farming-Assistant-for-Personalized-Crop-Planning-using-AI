@@ -33,13 +33,11 @@ Welcome to the Intelligent Farming Assistant project! This application provides 
 
 ## 📸 Screenshots
 
-> *Add screenshots of your application here to showcase its features.*
+### Landing Page
+![Landing Page](src/assets/landing_page.png)
 
-| Dashboard | Crop Recommendation |
-|:---:|:---:|
-| ![Dashboard Placeholder](https://via.placeholder.com/400x250?text=Dashboard+Screenshot) | ![Crop Recommendation Placeholder](https://via.placeholder.com/400x250?text=Crop+Recommendation+Screenshot) |
-| **Disease Detection** | **Weather Insights** |
-| ![Disease Detection Placeholder](https://via.placeholder.com/400x250?text=Disease+Detection+Screenshot) | ![Weather Insights Placeholder](https://via.placeholder.com/400x250?text=Weather+Insights+Screenshot) |
+### Dashboard
+![Dashboard](src/assets/dashboard_snapshot.png)
 
 ## 📂 Project Structure
 
